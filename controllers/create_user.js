@@ -12,7 +12,7 @@ const CreateUser = async(req, res = response) => {
         if ( user ) {
             return res.status(400).json({
                 ok: false,
-                msg: 'El usuario ya existe'
+                msg: 'Ya existe un usuario con ese Linkedin'
             });
         }
 
